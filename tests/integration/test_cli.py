@@ -12,7 +12,7 @@ runner = CliRunner()
 def test_version_command() -> None:
     result = runner.invoke(app, ["version"])
     assert result.exit_code == 0
-    assert "aws-cost-optimizer" in result.stdout
+    assert "aws-cost-audit" in result.stdout
 
 
 def test_analyze_stub_runs() -> None:

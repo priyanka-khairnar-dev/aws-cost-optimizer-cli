@@ -48,7 +48,7 @@ class AwsClient:
         self._session = boto3.Session(profile_name=profile, region_name=region)
         self._config = Config(
             retries={"max_attempts": max_retries, "mode": "adaptive"},
-            user_agent_extra="aws-cost-optimizer/0.1.0",
+            user_agent_extra="aws-cost-audit/0.1.0",
         )
         self._client_cache: dict[str, Any] = {}
 
