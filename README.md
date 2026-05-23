@@ -181,7 +181,7 @@ Minimum IAM policy:
 ## Roadmap
 
 - [x] Core abstractions (Analyzer interface, Finding dataclass, AWS client wrapper)
-- [ ] EC2 idle detection
+- [x] EC2 idle detection
 - [ ] EBS waste (unattached volumes, old snapshots)
 - [ ] NAT gateway egress analysis
 - [ ] Unused Elastic IPs
