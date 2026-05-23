@@ -35,14 +35,14 @@ def _configure_logging(verbose: bool) -> None:
 def main(
     verbose: Annotated[bool, typer.Option("--verbose", "-v", help="Enable debug logging.")] = False,
 ) -> None:
-    """aws-cost-optimizer — find waste in AWS accounts."""
+    """aws-cost-audit — find waste in AWS accounts."""
     _configure_logging(verbose)
 
 
 @app.command()
 def version() -> None:
     """Print version and exit."""
-    console.print(f"aws-cost-optimizer [bold cyan]{__version__}[/]")
+    console.print(f"aws-cost-audit [bold cyan]{__version__}[/]")
 
 
 @app.command()

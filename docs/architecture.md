@@ -2,7 +2,7 @@
 
 ## Goals
 
-`aws-cost-optimizer` is built around four design goals, in priority order:
+`aws-cost-audit` is built around four design goals, in priority order:
 
 1. **Findings are data.** Analyzers produce structured `Finding` objects; reporters consume them. This separation means we can add new output formats (JSON, HTML, Slack) without touching analyzer code, and we can test analyzers in isolation from output.
 
