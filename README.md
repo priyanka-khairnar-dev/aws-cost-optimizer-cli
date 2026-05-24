@@ -117,15 +117,23 @@ If the command isn't found, check that the venv where you installed the package 
 # Configure AWS credentials however you normally do
 export AWS_PROFILE=my-account
 
-# Run the full scan
+# Run the full scan (pretty terminal output)
 cost-optimizer analyze
 
 # Focus on AI workload waste specifically
 cost-optimizer analyze --ai-mode
 
-# Save markdown report
-cost-optimizer analyze --output report.md
+# Save a client-ready markdown report
+cost-optimizer analyze --format markdown --output report.md
+
+# Machine-readable output for pipelines
+cost-optimizer analyze --format json --output report.json
+
+# Show full fix suggestions inline in the terminal
+cost-optimizer analyze --detail
 ```
+
+See [examples/sample_report.md](examples/sample_report.md) for a full markdown report example.
 
 ## Sample output
 
